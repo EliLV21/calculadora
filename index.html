@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+        <script src = calculadora.js></script>
+    <title>Calculadora</title>
+    <style>
+    input[type=button]{
+      width: 16%;
+      height: 16%;
+      font-size: 25px;
+    }
+    input[type="text"]{
+      width: 70%;
+      height: 70%;
+      font-size: 30px;
+    }
+
+    </style>
+  </head>
+  <body align= center>
+    <h1>Calculadora</h1>
+    <div class="calculadora">
+      <form action="#" name="calculadora" id="calculadora">
+        <input type="text" id="textoPantalla"/>
+        <input type="text" id="resultado"/>
+      <p>
+        <input type="button" value="1" onClick="mostrar(this.value), '1'" />
+        <input type="button" value="2" onClick="mostrar(this.value),'2'"/>
+        <input type="button" value="3" onClick="mostrar(this.value),'3'"/>
+        <input type="button" value="+" onClick="mostrar(this.value)"/>
+      </p>
+      <p>
+        <input type="button" value="4" onClick="mostrar(this.value)"/>
+        <input type="button" value="5" onClick="mostrar(this.value)"/>
+        <input type="button" value="6" onClick="mostrar(this.value)"/>
+        <input type="button" value="-" onClick="mostrar(this.value)"/>
+      </p>
+      <p>
+        <input type="button" value="7" onClick="mostrar(this.value)"/>
+        <input type="button" value="8" onClick="mostrar(this.value)"/>
+        <input type="button" value="9" onClick="mostrar(this.value)"/>
+        <input type="button" value="*" onClick="mostrar(this.value)"/>
+      </p>
+      <p>
+        <input type="button" value="." onClick="mostrar(this.value)"/>
+        <input type="button" value="0" onClick="mostrar(this.value)"/>
+        <input type="button" value="=" onClick="compute()"/>
+        <input type="button" value="/" onClick="mostrar(this.value)"/>
+      </p>
+      <p>
+        <input type="button" value="Borrar" onClick="borrar()"/>
+  </body>
+</html>
